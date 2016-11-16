@@ -11,7 +11,7 @@ include('config.php');
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
     <!-- CUSTOM STYLE CSS -->
     <link href="assets/css/style.css" rel="stylesheet" />
-    <link href="assets/css/nbpcss.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
     <!-- ----- -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -90,15 +90,6 @@ include('config.php');
             <br>
         </div>
 
-        <!--<div class="container">
-            <div class="row">
-                <form method="POST" action="post_com.php">
-                    <input name="lienCom" placeholder="Postez votre commentaire ici !">
-                    <br>
-                    <input type="submit" name="postez" class="btn btn-danger" value="Postez !">
-                </form>
-            </div>
-        </div>-->
         <?php
         if($_SESSION['logged']) {
             ?>

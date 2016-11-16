@@ -1,17 +1,17 @@
 <div class="container">
     <div class="row">
-        <h2 class="page-header text-center">Liste des Categories !</h2>
+        <h2 class="page-header text-center">Liste de vos Commentaires !</h2>
     </div>
 </div><!-- fin container -->
 
 <?php
 //Connection Bdd
-$link = mysqli_connect('localhost','knab','knab','bac');
-
-
-$tableHeading =array('id_categorie',
-    'nom_categorie');
-// Ajouter le champ supprimer dans l'entete du tableau
+include('config.php');
+//champ table
+$tableHeading =array('id_commentaire',
+    'titre_video',
+    'desc_commentaire');
+// Ajouter le champ supprimer/modifier dans l'entete du tableau
 $tableHeading[]='supprimer';
 $tableHeading[]='modifier';
 
@@ -33,31 +33,35 @@ for( $i; $i < $tailleChamps; $i++)
 echo "</tr></thead>";	//fin tableau head
 
 
-// PARTIE 2 (CE QUE CONTIENT LA BASE DE DONNEE)
-echo "<tbody>";//tableau body debut
+
 
 //On récupère tous les champs de la table users
-$categories = "SELECT  * FROM categories";
+$roles = 'SELECT * 
+                    FROM commentaires 
+                    INNER JOIN videos
+                    ON commentaires.id_video = videos.id_video
+                    WHERE commentaire_id_user = '.$_SESSION["id_user"].'';
 //send query
-$reponse = mysqli_query($link, $categories);
+$reponse = mysqli_query($link, $roles);
 echo "<tbody>";//tableau body debut
 
 if(mysqli_num_rows($reponse)>0){//si il y a une reponse
     while($row = mysqli_fetch_assoc($reponse)){
         //debut formulaire
-        echo '<form action="modifier_categorie.php" method="post">';
+        echo '<form action="modifierCommentaireProfil.php" method="post">';
 
-        echo "<tr class='".$row['id_categorie']."'>";//ouvre une ligne
-        echo "<td class='".$row['id_categorie']."'>".$row['id_categorie']."<input type='hidden' name='id_categorie' value='".$row['id_categorie']."'></td>";
-        echo "<td class='".$row['nom_categorie']."'>".$row['nom_categorie']."<input type='hidden' name='nom_categorie' value='".$row['nom_categorie']."'></td>";
+        echo "<tr class='".$row['id_commentaire']."'>";//ouvre une ligne
+        echo "<td class='".$row['id_commentaire']."'>".$row['id_commentaire']."<input type='hidden' name='id_commentaire' value='".$row['id_commentaire']."'></td>";;
+        echo "<td class='".$row['titre_video']."'>".$row['titre_video'];
+        echo "<td class='".$row['desc_commentaire']."'>".$row['desc_commentaire']."<input type='hidden' name='desc_commentaire' value='".$row['desc_commentaire']."'></td>";
 
 
         //Ici tu ajoute une icone supprimer dans la derniere cellule
         // onclick = fonction removeuser() pour supprimer et tu lui passe l'id de l'utilisateur a supprimer
-        $champSupprimer = '<td><a id="'.$row["id_categorie"].'" href="javascript:void(0)" onclick="removeUser('.$row["id_categorie"].')"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>';
+        $champSupprimer = '<td><a id="'.$row["id_commentaire"].'" href="javascript:void(0)" onclick="removeUser('.$row["id_commentaire"].')"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>';
         echo $champSupprimer;
 
-        $champModifier = ' <td><a  class="modifier" id="'.$row["id_categorie"].'" >
+        $champModifier = ' <td><a  class="modifier" id="'.$row["id_commentaire"].'" >
 						<span class="glyphicon glyphicon-wrench" style="color:green;" aria-hidden="true"></span></a>
 						<input type="submit" name="modifier" value="modifier"></td>';
         echo $champModifier;
@@ -71,6 +75,7 @@ echo "</tbody>";//tableau body fin
 echo "</table>";//FIN DU TABLEAU
 echo "</div>"; //Fin container
 ?>
+
 
 
 <script type="text/javascript">
@@ -113,11 +118,11 @@ echo "</div>"; //Fin container
 
     var id_user=null;
 
-    function removeUser( id_categorie ){
+    function removeUser( id_commentaire ){
         $.ajax({
-            url: 'supprimer_categorie.php',
+            url: 'supprimer_commentaire_profil.php',
             type: 'GET',
-            data: 'id_categorie='+id_categorie,
+            data: 'id_commentaire='+id_commentaire,
             success: function(resultat){//si c'est ok
                 $('#table').before(resultat);
             }

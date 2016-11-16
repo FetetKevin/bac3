@@ -10,7 +10,7 @@ if (!empty($_POST) && isset($_POST['lienNom']) && isset($_POST['lienPrenom']) &&
     $lienMotDePasse = $_POST['lienMotDePasse'];
 
 
-    $sql = "INSERT INTO `users`(`nom`, `prenom`, `email`, `motDePasse`, `roles_id_role`) VALUES ('" . $lienNom . "','" . $lienPrenom . "','" . $lienEmail . "','" . $lienMotDePasse . "', '2')";
+    $sql = "INSERT INTO `users`(`nom`, `prenom`, `email`, `motDePasse`,`avatar_user`, `roles_id_role`) VALUES ('" . $lienNom . "','" . $lienPrenom . "','" . $lienEmail . "','" . $lienMotDePasse . "',' ', '2')";
 
 }
 

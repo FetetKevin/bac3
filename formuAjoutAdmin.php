@@ -21,7 +21,7 @@ else {
     <!-- CUSTOM STYLE CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
     <link href="assets/css/style.css" rel="stylesheet" />
-    <link href="assets/css/nbpcss.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
     <!-- ----- -->
     <link rel="shortcut icon" href="http://orig04.deviantart.net/74de/f/2012/155/d/1/4chan_logo_hq_by_michaudotcom-d529rdh.png" type="image/x-icon" />
     <!-- JS : TRIER LES VIDEOS -->

@@ -11,7 +11,7 @@ include('config.php');
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
     <!-- CUSTOM STYLE CSS -->
     <link href="assets/css/style.css" rel="stylesheet" />
-    <link href="assets/css/nbpcss.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
     <!-- ----- -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -106,7 +106,7 @@ $tableHeading[]='modifier';
                                 <input type="submit" value="Upload Image" name="submit">
                             </form>
                         </div>
-                        <div class=" col-md-9 col-lg-9 ">
+                        <div class=" col-md-12 col-lg-12 ">
                             <table class="table table-user-information">
                                 <tbody>
                                 <?php
@@ -187,18 +187,18 @@ $tableHeading[]='modifier';
                                 }
                             ?>
                             </table>
-
                         </div>
                     </div>
                 </div>
                 <div class="panel-footer">
                     <center><a href="#" class="btn btn-success"><i class="glyphicon glyphicon-envelope"> Mes messages!</i></a></center>
                 </div>
-
             </div>
         </div>
     </div>
 </div>
+<?php include('listCommentairesProfil.php'); ?>
+
 <script type="text/javascript">
 
 
@@ -231,21 +231,6 @@ $tableHeading[]='modifier';
     //JQUERY
 
 
-
-/****
-    var id_user=null;
-
-    function removeUser( id_user ){
-        $.ajax({
-            url: 'supprimer_user_profil.php',
-            type: 'GET',
-            data: 'id_user='+id_user,
-            success: function(resultat){//si c'est ok
-                $('#table').before(resultat);
-            }
-        })
-    };
-****/
 </script>
 
 </body>

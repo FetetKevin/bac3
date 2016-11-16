@@ -20,6 +20,7 @@
                     <li><a href="formuAjoutAdmin.php">Formu ajout Users</a></li>
                     <li><a href="formuAjoutCategorie.php">Formu ajout Categorie</a></li>
                     <li><a href="formuAjoutVideo.php">Formu ajout Videos</a></li>
+                    <li><a href="listCommentairesAdmin.php">Liste des Commentaires</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                 </ul>

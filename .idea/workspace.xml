@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec7996dd-ad40-4818-91d6-6f9791b521b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/listCommentairesAdmin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/listCommentairesProfil.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modifierCommentaireProfil.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modifierCommentairesAdmin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/supprimer_commentaire_profil.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/nbpcss.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/details_video.php" afterPath="$PROJECT_DIR$/details_video.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formuAjoutAdmin.php" afterPath="$PROJECT_DIR$/formuAjoutAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formuAjoutCategorie.php" afterPath="$PROJECT_DIR$/formuAjoutCategorie.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formuAjoutRole.php" afterPath="$PROJECT_DIR$/formuAjoutRole.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formuAjoutUser.php" afterPath="$PROJECT_DIR$/formuAjoutUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formuAjoutVideo.php" afterPath="$PROJECT_DIR$/formuAjoutVideo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/listCategories.php" afterPath="$PROJECT_DIR$/listCategories.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modifier_categorie.php" afterPath="$PROJECT_DIR$/modifier_categorie.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/navbarAdmin.php" afterPath="$PROJECT_DIR$/navbarAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profil.php" afterPath="$PROJECT_DIR$/profil.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/traitementAjoutUser.php" afterPath="$PROJECT_DIR$/traitementAjoutUser.php" />
-    </list>
+    <list default="true" id="ec7996dd-ad40-4818-91d6-6f9791b521b4" name="Default" comment="" />
     <ignored path="Bac.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -81,8 +60,8 @@
       <file leaf-file-name="listCommentairesAdmin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/listCommentairesAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+            <state relative-caret-position="102">
+              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
                 <marker date="1479310002811" expanded="true" signature="1985:2134" ph="SELECT * FRO... commentaires" />
                 <marker date="1479310002811" expanded="true" signature="1985:2135" ph="SELECT * FRO... commentaires" />
@@ -297,12 +276,12 @@
       <workItem from="1479196135574" duration="9039000" />
       <workItem from="1479213462753" duration="8627000" />
       <workItem from="1479284669341" duration="8168000" />
-      <workItem from="1479300199785" duration="8933000" />
+      <workItem from="1479300199785" duration="9206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105667000" />
+    <option name="totallyTimeSpent" value="105940000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="420" y="0" width="953" height="765" extended-state="0" />
@@ -801,8 +780,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/listCommentairesAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+        <state relative-caret-position="102">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
             <marker date="1479310002811" expanded="true" signature="1985:2134" ph="SELECT * FRO... commentaires" />
             <marker date="1479310002811" expanded="true" signature="1985:2135" ph="SELECT * FRO... commentaires" />

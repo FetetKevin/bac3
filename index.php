@@ -78,29 +78,23 @@ while($row = mysqli_fetch_assoc($reponse)){
     <?php
     if($row['etat_video'] == "publie") {
         ?>
-        <div data-addVideo="<?= $row['date_video'] ?>" class="container video videoCat-<?= $row['id_categorie'] ?>">
-            <div class="row g-pad-bottom">
-                <div class="col-md-12">
-                    <div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3" id="titreVideo">
-                        <h4 style="margin-top: 30px;margin-bottom: 20px; color: #E52C27;"><?= $row['titre_video']; ?></h4>
-                       <!-- <p><?= $row['desc_video']; ?></p>
-                        <p>DATE : <?= $row['date_video']; ?></p>-->
-                        <p>Categorie : <?= $row['nom_categorie']; ?></p>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12 col-xs-6 col-md-offset-3">
-                            <center>
-                                <a href="details_video.php?id_video=<?= $row['id_video'] ?>">
-                                <img src="vignette/<?php echo $row['vignette_video'] ?>" class="img-squarre img-responsive" style="height: 200px;width:300px;">
-                                    </a>
-                            </center>
-                        </div>
-                    </div>
-
-                    <hr>
+        <div class="container video videoCat-<?= $row['id_categorie'] ?>">
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                        <h2 class="text-center"><?= $row['titre_video']; ?></h2>
+                        <h3 class="text-center">Categorie : <?= $row['nom_categorie']; ?></h3>
+                </div>
+                <div class="panel-body">
+                    <center>
+                        <a href="details_video.php?id_video=<?= $row['id_video'] ?>">
+                            <img src="vignette/<?php echo $row['vignette_video'] ?>" class="img-squarre img-responsive" style="height: 200px;width:300px;">
+                        </a>
+                    </center>
                 </div>
             </div>
         </div><!-- fin ontainer -->
+        <br>
+        <br>
         <?php
     }
 }
@@ -121,13 +115,13 @@ while($row = mysqli_fetch_assoc($reponse)){
     $total_pages = ceil($total_records / $per_page);
 
     //GO TO FIRST PAGE
-    echo '<center><ul class="pagination" style="margin-bottom: 140px;"><li><span><a href="index.php?page=1">First Page</a></span></li>';
+    echo '<center><ul class="pagination"><li><span><a href="index.php?page=1" style="color:red;">First Page</a></span></li>';
 
     for ($i=1; $i<=$total_pages; $i++) {
-        echo "<li><span><a href=index.php?page=$i>".$i."</a></span></li>";
+        echo "<li><span><a href=index.php?page=$i style=\"color:red;\">".$i."</a></span></li>";
     };
     // GO TO LAST PAGE
-    echo "<li><span><a href=index.php?page=$total_pages>Last Page</a></span></li></center>";
+    echo "<li><span><a href=index.php?page=$total_pages style=\"color:red;\">Last Page</a></span></li></center>";
     ?>
 </div><!-- FIN PAGINATION -->
 

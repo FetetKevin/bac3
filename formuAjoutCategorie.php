@@ -29,17 +29,11 @@ else {
 <body>
 <?php include ('navbar.php'); ?>
 <?php include ('navbarAdmin.php'); ?>
-<div class="container" style="background: white;">
-    <div class="row">
-        <h2 class="page-header text-center">Ajoutez une Categorie !</h2>
-        <div class="col-md-5 col-sm-6 col-xs-12">
+<div class="container">
+    <div class="panel panel-danger">
+        <div class="panel-heading"><h3 class="text-center">Ajoutez une Categorie !</h3>
         </div>
-    </div>
-</div>
-
-<div class="container" style="background: white;border-bottom: 1px solid black;">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="panel-body">
             <form class="form-horizontal" role="form" method="post" action="traitementAjoutCategorie.php" id="formuLogin">
                 <div class="form-group">
                     <label for="name" class="col-sm-2 control-label">Nouvelle categorie</label>

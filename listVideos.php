@@ -1,9 +1,8 @@
 <div class="container">
-    <div class="row">
-        <h2 class="page-header text-center">Liste des Videos !</h2>
-    </div>
-</div>
-
+    <div class="panel panel-success">
+        <div class="panel-heading"><h3 class="text-center">Liste des Videos !</h3>
+        </div>
+        <div class="panel-body">
 <?php
 //Connection Bdd
 $link = mysqli_connect('localhost','knab','knab','bac');
@@ -18,8 +17,6 @@ $tableHeading =array('id_video',
 // Ajouter le champ supprimer dans l'entete du tableau
 $tableHeading[]='supprimer';
 $tableHeading[]='modifier';
-
-echo "<div class='container'>";
 
 // PARTIE 1 ( LE HEADER DU TABLEAU)
 //DEBUT DU TABLEAU
@@ -71,11 +68,11 @@ if(mysqli_num_rows($reponse)>0){
         //Ici tu ajoute une icone supprimer dans la derniere cellule
         // onclick = fonction removeuser() pour supprimer et tu lui passe l'id de l'utilisateur a supprimer
         $champSupprimer = '<td><a id="'.$row["id_video"].'" href="javascript:void(0)" onclick="removeUser('.$row["id_video"].')">
-						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>';
+						<span class="glyphicon glyphicon-remove"  style="color:red;" aria-hidden="true"></span></a></td>';
         echo $champSupprimer;
 
         $champModifier = ' <td><a  class="modifier" id="'.$row["id_video"].'" >
-						<span class="glyphicon glyphicon-wrench" style="color:green;" aria-hidden="true"></span></a>
+						<span class="glyphicon glyphicon-wrench" style="color:blue;" aria-hidden="true"></span></a>
 						<input type="submit" name="modifier" value="modifier"></td>';
         echo $champModifier;
 
@@ -87,9 +84,11 @@ if(mysqli_num_rows($reponse)>0){
 echo "</tbody>";//tableau body fin
 echo "</table>";//FIN DU TABLEAU
 
-echo "</div>"; //Fin container
 ?>
-
+        </div>
+            <div class="panel-footer">Liste des <span style="color:green;">Videos</span></div>
+    </div>
+</div>
 
 
 

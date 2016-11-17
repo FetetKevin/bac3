@@ -19,10 +19,10 @@ if($_SESSION['logged'] && $_SESSION['nom_role'] == "admin") {
                 <!-- Collection de liens de navigatioon -->
                 <div id="navbarCollapse2" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="formuAjoutRole.php">Formu ajout Role</a></li>
-                        <li><a href="formuAjoutAdmin.php">Formu ajout Users</a></li>
-                        <li><a href="formuAjoutCategorie.php">Formu ajout Categorie</a></li>
-                        <li><a href="formuAjoutVideo.php">Formu ajout Videos</a></li>
+                        <li><a href="formuAjoutRole.php">Roles</a></li>
+                        <li><a href="formuAjoutAdmin.php">Users</a></li>
+                        <li><a href="formuAjoutCategorie.php">Categories</a></li>
+                        <li><a href="formuAjoutVideo.php">Videos</a></li>
                         <li><a href="listCommentairesAdmin.php">Liste des Commentaires</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">

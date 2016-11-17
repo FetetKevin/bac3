@@ -34,6 +34,26 @@ else {
 
 <h1>BIENVENU DANS L'ADMIN</h1>
 <center><h2>Cette page est strictement reservée aux Admins !</h2></center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+<br><br>
 
 </body>
 </html>

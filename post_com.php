@@ -17,7 +17,7 @@ if (!empty($_POST) && isset($_POST['lienCom'])) {
 
 if (mysqli_query($link, $req)) {
     echo '<center><p class=\'text-danger\'>Ajout effectué :)</p></center>';
-    header('Location:index.php');
+    header('Location:details_video.php?id_video='.$_GET['id_video']);
 } else {
     echo "Error: " . $req . "<br>" . mysqli_error($link);
    //header('Location: index.php');

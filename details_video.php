@@ -37,24 +37,25 @@ include('config.php');
         while($row = mysqli_fetch_array($reponse)) {
 
             ?>
-    <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3" id="titreVideo">
-                    <h4 style="margin-top: 30px;margin-bottom: 20px; color: #E52C27;"><?= $row['titre_video']; ?></h4>
-                    <br>
-                    <p>DATE : <?= $row['date_video']; ?></p>
-                    <br>
-                    <p><?= $row['desc_video']; ?></p>
-                </div>
-            </div>
+            <div class="container">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="text-center"><?= $row['titre_video']; ?></h3>
+                    </div>
+                    <div class="panel-body">
+                        <p class="text-center">DATE : <?= $row['date_video']; ?></p>
+                        <br>
+                        <p class="text-center"><?= $row['desc_video']; ?></p>
 
-            <div class="row g-pad-bottom">
-                <div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3" id="star">
-                    <center>
-                        <iframe width="600" height="400"
-                                src="https://www.youtube.com/embed/<?= $row['url_video']; ?>"
-                                frameborder="0" allowfullscreen style="margin-top:30px;"></iframe>
-                    </center>
+
+                        <div class="panel-footer">
+                                <center>
+                                    <iframe width="600" height="400"
+                                            src="https://www.youtube.com/embed/<?= $row['url_video']; ?>"
+                                            frameborder="0" allowfullscreen style="margin-top:30px;"></iframe>
+                                </center>
+                        </div>
+                    </div>
                 </div>
             </div>
             <?php
@@ -64,6 +65,9 @@ include('config.php');
         <br>
         <br>
         <div class="container">
+            <div class="panel panel-danger">
+                <div class="text-center panel-heading">COMMENTAIRES</div>
+                    <div class="panel-body">
             <?php
              $sql ='SELECT * 
                     FROM commentaires 
@@ -75,34 +79,27 @@ include('config.php');
             while($row = mysqli_fetch_array($reponse)) {
 
                 ?>
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+
                     <div class="panel panel-info">
                         <div class="panel-heading">Posté par : <span style="color:red;"><?= strtoupper($row['nom']).' '. strtoupper($row['prenom']); ?></span> le <span style="color:red;"><?= $row['date_commentaire']; ?></span></div>
                         <div class="panel-body"><?= $row['desc_commentaire']; ?></div>
                     </div>
-                </div>
-            </div>
+
             <?php
             }
             ?>
             <hr>
-            <br>
-        </div>
+                    </div>
+                </div>
+            </div>
 
         <?php
         if($_SESSION['logged']) {
             ?>
-            <div class="container" style="background: white;">
-                <div class="row">
-                    <h2 class="page-header text-center">Ajoutez un Commentaire !</h2>
-                    <div class="col-md-5 col-sm-6 col-xs-12">
-                    </div>
-                </div>
-            </div>
-            <div class="container" style="background: white;border-bottom: 1px solid black;">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
+            <div class="container">
+                <div class="panel panel-danger">
+                    <div class="panel-heading"><h3 class="text-center">Ajoutez un Commentaire !</h3></div>
+                    <div class="panel-body">
                         <form class="form-horizontal" role="form" method="post" action="post_com.php?id_video=<?= $_GET['id_video'] ?>" id="formuLogin">
                             <div class="form-group">
                                 <label for="name" class="col-sm-2 control-label">Votre commentaire</label>
@@ -119,6 +116,7 @@ include('config.php');
                             </div>
                         </form>
                     </div>
+                    <div class="panel-footer">Vous pouvez gerer vos commentaire [<a href="profil.php">ici</a>]</div>
                 </div>
             </div>
             <?php

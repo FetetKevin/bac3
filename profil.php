@@ -79,8 +79,8 @@ $tableHeading[]='modifier';
 ?>
 <div class="container">
     <div class="row">
-        <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
-            <p class=" text-info" id="date_heure">
+        <div class="col-md-6 col-md-offset-3 ">
+            <p class=" text-info" id="date_heure" style="color:red;font-weight:bold;">
                 <script type="text/javascript">window.onload = date_heure('date_heure');</script>
             </p>
         </div>
@@ -98,7 +98,7 @@ $tableHeading[]='modifier';
             ?>
             <div class="panel panel-info">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><?= strtoupper($row["nom"]).' '.strtoupper($row['prenom']); ?></h3>
+                    <h3 class="text-center"><?= strtoupper($row["nom"]).' '.strtoupper($row['prenom']); ?></h3>
                 </div>
                 <div class="panel-body">
                     <div class="row">
@@ -174,12 +174,12 @@ $tableHeading[]='modifier';
                                 echo '</tr>';
                                 $champSupprimer = '<td><a class="supprimer" id="' . $row["id_user"] . '"
                                     href="supprimer_user_profil.php?id_user=' . $row["id_user"] . '" onclick="removeUser(' . $row["id_user"] . ')">
-                                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>';
+                                    <span class="glyphicon glyphicon-remove"  style="color:red;" aria-hidden="true"></span></a>';
 
                                 echo $champSupprimer;
 
                                 $champModifier = ' <td><a  class="modifier" id="' . $row["id_user"] . '" >
-                                    <span class="glyphicon glyphicon-wrench" style="color:green;" aria-hidden="true"></span></a>
+                                    <span class="glyphicon glyphicon-wrench" style="color:blue;" aria-hidden="true"></span></a>
                                     <input type="submit" name="modifier" value="modifier"></td>';
                                 echo $champModifier;
 

@@ -3,18 +3,21 @@ html {
     padding:0;
 }
 body {
-    background: url('http://www.freebiesgallery.com/wp-content/uploads/2012/08/dark-website-backgrounds-10.jpg');
-    background-size: 100%;
-    background-repeat: repeat;
+    background: url('http://wallpoper.com/images/00/15/58/86/solid-color_00155886.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     margin: 0;
     padding:0;
-    height: 100%;
 }
 h1{
 
 }
 h2{
-    color:white;
+    color:black;
+}
+h3 {
+    color:black;
+
 }
 h4{
 
@@ -28,17 +31,14 @@ img {
 span {
 
 }
-#table {
-    background-color:white;
-}
 a {
-
+color:green;
 }
 li {
 
 }
 th {
-    color:red;
+    color:green;
 }
 tr {
     color:black;
@@ -50,14 +50,11 @@ iframe{
     border: 3px solid whitesmoke;
 }
 #titreVideo {
-    border-bottom: 1px solid #E52C27;
+    border-bottom: 1px solid green;
     background: white;
     text-align: center;
 }
-#formuLogin {
-    margin-top: 10%;
-    margin-bottom: 12%;
-}
+
 
 
 

@@ -119,5 +119,3 @@
     //var_dump($_SESSION);
     ?>
 </div>
-<br>
-<br>

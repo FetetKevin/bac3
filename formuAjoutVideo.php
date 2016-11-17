@@ -31,76 +31,79 @@ else {
 <?php include ('navbar.php'); ?>
 <?php include ('navbarAdmin.php'); ?>
 
-<div class="container" style="background: white;border-bottom: 1px solid black;">
-    <div class="row">
-        <h2 class="page-header text-center">Formulaire pour ajouter une nouvelle video !</h2>
-        <form class="form-horizontal" role="form" method="post" action="traitementAjoutVideo.php">
-            <div class="form-group">
-                <label class="col-sm-2 control-label">URL</label>
-                <div class="col-md-4">
-                    <input type="text" class="form-control" name="lienUrl" id="url1" value="">
-                </div>
+<div class="container">
+        <div class="panel panel-danger">
+            <div class="panel-heading"><h3 class="text-center">Ajoutez une Video/Article !</h3>
             </div>
-            <div class="form-group">
-                <label class="col-sm-2 control-label">Vignette</label>
-                <div class="col-md-4">
-                    <input type="text" class="form-control" name="vignette" id="url1" value="">
+            <div class="panel-body">
+            <form class="form-horizontal" role="form" method="post" action="traitementAjoutVideo.php">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">URL</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="lienUrl" id="url1" value="">
+                    </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-2 control-label">TITRE</label>
-                <div class="col-md-4">
-                    <input type="text" class="form-control" name="lienTitre" id="titre1" value="">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Vignette</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="vignette" id="url1" value="">
+                    </div>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">TITRE</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="lienTitre" id="titre1" value="">
+                    </div>
+                </div>
 
-            <!-- SEPARATEUR -->
-            <div class="row">
-                <div class="col-md-4 col-xs-12 col-md-offset-2" style="border-bottom: 1px solid darkgrey;box-shadow: 0px 2px 3px #888888;margin-bottom:30px;"></div>
-            </div>
-
-            <div class="form-group">
-                <label class="col-sm-2 control-label">DESCRIPTION</label>
-                <div class="col-sm-6">
-                    <textarea class="form-control" rows="4" name="description" id="description1" ></textarea>
+                <!-- SEPARATEUR -->
+                <div class="row">
+                    <div class="col-md-4 col-xs-12 col-md-offset-2" style="border-bottom: 1px solid darkgrey;box-shadow: 0px 2px 3px #888888;margin-bottom:30px;"></div>
                 </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="col-md-6 col-md-offset-2">
-                <?php
-                $sql= "SELECT * FROM categories";
-                $req = $link->query($sql);
 
-                // on envoie la requête
-                while ($row = mysqli_fetch_object($req)) {
-                    ?>
-                    <label class="btn btn-danger checked">
-                        <input type="radio" name="categorie[]" value="<?= $row->id_categorie;?>"> <?= $row->nom_categorie;?>
-                    </label>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">DESCRIPTION</label>
+                    <div class="col-sm-6">
+                        <textarea class="form-control" rows="4" name="description" id="description1" ></textarea>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="col-md-6 col-md-offset-2">
                     <?php
-                }
-                ?>
-                <br>
-                <br>
-                <label class="btn btn-danger checked">
-                    <input type="radio" name="etat" value="publie"> Publie
-                </label>
-                <label class="btn btn-danger">
-                    <input type="radio" name="etat" value="non publie"> Non Publie
-                </label>
-            </div>
+                    $sql= "SELECT * FROM categories";
+                    $req = $link->query($sql);
 
-            <div class="form-group">
-                <div class="col-sm-10 col-sm-offset-2">
-                    <input name="envoyer" type="submit" value="Ajouter une video" class="btn btn-danger" style="margin-top:30px;">
+                    // on envoie la requête
+                    while ($row = mysqli_fetch_object($req)) {
+                        ?>
+                        <label class="btn btn-danger checked">
+                            <input type="radio" name="categorie[]" value="<?= $row->id_categorie;?>"> <?= $row->nom_categorie;?>
+                        </label>
+                        <?php
+                    }
+                    ?>
+                    <br>
+                    <br>
+                    <label class="btn btn-danger checked">
+                        <input type="radio" name="etat" value="publie"> Publie
+                    </label>
+                    <label class="btn btn-danger">
+                        <input type="radio" name="etat" value="non publie"> Non Publie
+                    </label>
                 </div>
-            </div>
-            <br>
-            <br>
-            <br>
-        </form>
+
+                <div class="form-group">
+                    <div class="col-sm-10 col-sm-offset-2">
+                        <input name="envoyer" type="submit" value="Ajouter une video" class="btn btn-danger" style="margin-top:30px;">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+            </form>
+        </div>
     </div>
 </div>
 <br>

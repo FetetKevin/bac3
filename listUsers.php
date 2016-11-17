@@ -1,10 +1,12 @@
 <div class="container">
-    <div class="row">
-        <h2 class="page-header text-center">Liste des utilisateurs !</h2>
-    </div>
-</div>
+    <div class="panel panel-success">
+        <div class="panel-heading"><h3 class="text-center">Liste des Utilisateurs !</h3>
+        </div>
+        <div class="panel-body">
 
-<?php
+
+
+        <?php
 //Connection Bdd
 $link = mysqli_connect('localhost','knab','knab','bac');
 
@@ -16,8 +18,6 @@ $tableHeading =array('id_user','nom',
 $tableHeading[]='supprimer';
 $tableHeading[]='modifier';
 
-//debut container
-echo "<div class='container'>";
 
 echo "<table id='table' class='table table-bordered table-responsive table-hover'>";
 //debut tableau head
@@ -57,12 +57,12 @@ if(mysqli_num_rows($reponse)>0){//si il y a une reponse
 
         $champSupprimer = '<td><a class="supprimer" id="'.$row["id_user"].'" 
 						href="javascript:void(0)" onclick="removeUser('.$row["id_user"].')">
-						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>';
+						<span class="glyphicon glyphicon-remove"  style="color:red;" aria-hidden="true"></span></a>';
 
         echo $champSupprimer;
 
         $champModifier = ' <td><a  class="modifier" id="'.$row["id_user"].'" >
-						<span class="glyphicon glyphicon-wrench" style="color:green;" aria-hidden="true"></span></a>
+						<span class="glyphicon glyphicon-wrench" style="color:blue;" aria-hidden="true"></span></a>
 						<input type="submit" name="modifier" value="modifier"></td>';
         echo $champModifier;
 
@@ -72,8 +72,12 @@ if(mysqli_num_rows($reponse)>0){//si il y a une reponse
 }
 echo "</tbody>";//tableau body fin
 echo "</table>";//FIN' DU TABLEAU
-echo "</div>"; //Fin container
 ?>
+        </div>
+        <div class="panel-footer">Liste des <span style="color:green;">Utilisateurs</span></div>
+    </div>
+</div>
+
 
 <script type="text/javascript">
 

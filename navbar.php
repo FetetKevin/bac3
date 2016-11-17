@@ -42,13 +42,13 @@
                 if($_SESSION['logged']) {
                 }
                 else {
-                    echo '<li ><a href = "formuAjoutUser.php" ><span class="glyphicon glyphicon-user" ></span > Inscription</a ></li >';
+                    echo '<li ><a href = "formuAjoutUser.php" ><span class="glyphicon glyphicon-user" style="color:red;"></span > Inscription</a ></li >';
                 }
                 ?>
                 <?php
 
                 if ($_SESSION['logged']) {
-                    echo '<li><a href = "deco.php" ><span class="glyphicon glyphicon-log-in" ></span > Se deconnecter</a ></li>';
+                    echo '<li><a href = "deco.php" ><span class="glyphicon glyphicon-log-in"  style="color:red;"></span > Se deconnecter</a ></li>';
                 }
                 else {
                     //echo '<li><a href = "login.php" ><span class="glyphicon glyphicon-log-in" ></span > Connexion</a ></li>';

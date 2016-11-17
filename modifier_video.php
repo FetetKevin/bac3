@@ -7,6 +7,7 @@ if(!empty($_POST['modifier']) && isset($_POST)){
 
     $id_video = (int) $_POST['id_video'] ;
     $url_video = (string) $_POST['url_video'] ;
+    $vignette_video = (string) $_POST['vignette_video'] ;
     $titre_video = (string) $_POST['titre_video'] ;
     $desc_video = (string) $_POST['desc_video'] ;
     $categorie_video = (string) $_POST['categorie_video'] ;
@@ -19,6 +20,7 @@ if(!empty($_POST['modifier']) && isset($_POST)){
     $sql= "UPDATE videos SET  
 	`id_video` = '$id_video',
 	`url_video` = '$url_video',
+	`vignette_video` = '$vignette_video',
 	`titre_video` = '$titre_video',
 	`desc_video` = '$desc_video',
 	`categorie_video` = '$categorie_video',

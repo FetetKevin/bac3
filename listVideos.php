@@ -1,6 +1,6 @@
 <div class="container">
     <div class="panel panel-success">
-        <div class="panel-heading"><h3 class="text-center">Liste des Videos !</h3>
+        <div class="panel-heading"><h3 class="text-center">Liste des Videos Postées !</h3>
         </div>
         <div class="panel-body">
 <?php
@@ -9,6 +9,7 @@ $link = mysqli_connect('localhost','knab','knab','bac');
 
 $tableHeading =array('id_video',
     'url_video',
+    'vignette_video',
     'titre_video',
     'desc_video',
     'categorie_video',
@@ -41,6 +42,7 @@ echo "<tbody>";//tableau body debut
 $videos = "SELECT * FROM videos
 	LEFT JOIN categories 
 	ON videos.categorie_video = categories.id_categorie
+	WHERE etat_video = 'publie'
 	ORDER BY id_video";
 //send query
 $reponse = mysqli_query($link, $videos);
@@ -54,6 +56,7 @@ if(mysqli_num_rows($reponse)>0){
 
         echo "<td class='".$row['id_video']."'>".$row['id_video']."<input type='hidden' name='id_video' value='".$row['id_video']."'></td>";
         echo "<td class='".$row['url_video']."'>".$row['url_video']."<input type='hidden' name='url_video' value='".$row['url_video']."'></td>";
+        echo "<td class='".$row['vignette_video']."'>".$row['vignette_video']."<input type='hidden' name='vignette_video' value='".$row['vignette_video']."'></td>";
         echo "<td class='".$row['titre_video']."'>".$row['titre_video']."<input type='hidden' name='titre_video' value='".$row['titre_video']."'></td>";
         echo "<td class='".$row['desc_video']."'>".$row['desc_video']."<input type='hidden' name='desc_video' value='".$row['desc_video']."'></td>";
         echo "<td class='".$row['categorie_video']."'>".$row['categorie_video']."<input type='hidden' name='categorie_video' value='".$row['categorie_video']."'></td>";
@@ -86,7 +89,7 @@ echo "</table>";//FIN DU TABLEAU
 
 ?>
         </div>
-            <div class="panel-footer">Liste des <span style="color:green;">Videos</span></div>
+            <div class="panel-footer">Liste des <span style="color:green;">Videos Publiées</span></div>
     </div>
 </div>
 

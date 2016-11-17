@@ -23,3 +23,8 @@ faire une pop up de confirmation de suppression/modification
 faire un bouton deroulant publie/non publie pour chnager l'etat d'un article (video)
 upload image
   
+RENDRE POLITIQUEMENT CORRECT LES PLACEHOLDER DYNAMIQUE
+FAIRE UN BOUTON REMONTER EN HAUT DE PAGE
+NAVBAR FIXED AU SCROLL
+AFFICHER LES DIVS AVEC UN FONDU , ANIMER
+RENDRE RESPONSIVE

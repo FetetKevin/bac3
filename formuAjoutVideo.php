@@ -110,6 +110,7 @@ else {
 <br>
 <br>
 <?php include('listVideos.php'); ?>
+<?php include('listVideos2.php'); ?>
 <script src="dynamicplaceholder.js"></script>
 
 </body>

@@ -1,6 +1,11 @@
 <?php
 session_start();
 include('config.php');
+if($_SESSION['logged']){
+}
+else {
+    header('Location:index.php?notconnected');
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr">

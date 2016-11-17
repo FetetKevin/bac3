@@ -1,5 +1,10 @@
 <?php
 include('config.php');
+if($_SESSION['logged'] && $_SESSION['nom_role'] == "admin") {
+}
+else {
+    header('Location: index.php?notadmin');
+}
 
 if(!empty($_POST['modifier']) && isset($_POST)){
 

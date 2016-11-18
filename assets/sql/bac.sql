@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Mer 16 Novembre 2016 à 15:37
+-- Généré le :  Ven 18 Novembre 2016 à 09:01
 -- Version du serveur :  5.7.14
 -- Version de PHP :  5.6.25
 
@@ -62,10 +62,16 @@ CREATE TABLE `commentaires` (
 INSERT INTO `commentaires` (`id_commentaire`, `id_video`, `commentaire_id_user`, `desc_commentaire`, `date_commentaire`) VALUES
 (44, 12, 45, 'ayy', '2016-11-16 16:30:54'),
 (43, 10, 45, 'ceci est uconstructif', '2016-11-16 16:30:33'),
+(45, 12, 1, 'hgchghhggjhj;vhj', '2016-11-17 10:11:39'),
 (41, 9, 44, 'poussrouj', '2016-11-16 16:29:38'),
 (38, 11, 1, 'jkgfhkkkkk', '2016-11-16 15:31:10'),
 (40, 12, 44, 'kek', '2016-11-16 16:29:21'),
-(35, 12, 32, 'trop cool bob marley', '2016-11-16 10:37:09');
+(35, 12, 32, 'trop cool bob marley', '2016-11-16 10:37:09'),
+(46, 12, 1, 'oui', '2016-11-17 11:05:58'),
+(47, 12, 1, 'oui', '2016-11-17 11:07:42'),
+(48, 12, 1, 'la redirection est bonne , enfin je crois\r\n', '2016-11-17 11:09:49'),
+(49, 12, 1, 'hgjhnhs', '2016-11-17 11:10:12'),
+(50, 12, 46, 'bonjour', '2016-11-17 13:51:58');
 
 -- --------------------------------------------------------
 
@@ -107,10 +113,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id_user`, `nom`, `prenom`, `email`, `motDePasse`, `avatar_user`, `roles_id_role`) VALUES
-(1, 'fetet', 'kevin', 'fetetkevin@gmail.com', 'insectile22', 'hqdefault4.jpg', 1),
+(1, 'fetet', 'kevin', 'fetetkevin@gmail.com', 'insectile22', '1.jpg', 1),
 (32, 'a', 'a', 'a@a.com', 'a', 'coincoin.jpg', 2),
 (44, 'b', 'b', 'b@b.com', 'b', ' ', 2),
-(45, 'c', 'c', 'c@c.com', 'c', ' ', 2);
+(45, 'c', 'c', 'c@c.com', 'c', ' ', 2),
+(46, 'renÃ©', 'jean-jacques', '1@gmail.com', '1', 'hqdefault3.jpg', 2);
 
 -- --------------------------------------------------------
 
@@ -197,7 +204,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT pour la table `commentaires`
 --
 ALTER TABLE `commentaires`
-  MODIFY `id_commentaire` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id_commentaire` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 --
 -- AUTO_INCREMENT pour la table `roles`
 --
@@ -207,12 +214,12 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 --
 -- AUTO_INCREMENT pour la table `videos`
 --
 ALTER TABLE `videos`
-  MODIFY `id_video` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id_video` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

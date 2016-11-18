@@ -5,7 +5,7 @@
 </style>
 
 
-<div class="Navbar">
+<div class="Navbar" id="bdn">
     <nav role="navigation" class="navbar navbar-default">
         <!-- Pour un affichage sur les mobiles -->
         <div class="navbar-header">
@@ -119,3 +119,6 @@
     //var_dump($_SESSION);
     ?>
 </div>
+<script>
+    <?php include('barfixed.js'); ?>
+</script>

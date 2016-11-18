@@ -111,7 +111,11 @@ else {
 <br>
 <?php include('listVideos.php'); ?>
 <?php include('listVideos2.php'); ?>
+<?php include('remonter.php'); ?>
+
 <script src="dynamicplaceholder.js"></script>
+<script src="custom.js"></script>
+
 
 </body>
 </html>

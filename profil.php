@@ -204,6 +204,8 @@ $tableHeading[]='modifier';
 </div>
 <?php include('listCommentairesProfil.php'); ?>
 
+<?php include('remonter.php'); ?>
+
 <script type="text/javascript">
 
 
@@ -237,6 +239,8 @@ $tableHeading[]='modifier';
 
 
 </script>
+<script src="custom.js"></script>
+
 
 </body>
 </html>

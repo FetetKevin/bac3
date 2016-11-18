@@ -1,8 +1,9 @@
 <div class="container">
-    <div class="panel panel-success">
-        <div class="panel-heading"><h3 class="text-center">Liste des Categories !</h3>
-        </div>
-        <div class="panel-body">
+    <div class="row">
+        <div class="panel panel-success">
+            <div class="panel-heading"><h3 class="text-center">Liste des Categories !</h3>
+            </div>
+            <div class="panel-body">
 
 
         <?php
@@ -69,9 +70,10 @@ if(mysqli_num_rows($reponse)>0){//si il y a une reponse
 echo "</tbody>";//tableau body fin
 echo "</table>";//FIN DU TABLEAU
 ?>
+            </div>
+            <div class="panel-footer">Liste des <span style="color:green;">Categories</span></div>
         </div>
-        <div class="panel-footer">Liste des <span style="color:green;">Categories</span></div>
-    </div>
+     </div>
 </div>
 
 

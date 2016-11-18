@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec7996dd-ad40-4818-91d6-6f9791b521b4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/custom.css" afterPath="$PROJECT_DIR$/assets/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tableau de bord bac.txt" afterPath="$PROJECT_DIR$/assets/tableau de bord bac.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formuAjoutCategorie.php" afterPath="$PROJECT_DIR$/formuAjoutCategorie.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/listVideos.php" afterPath="$PROJECT_DIR$/listVideos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/listVideos2.php" afterPath="$PROJECT_DIR$/listVideos2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/listCategories.php" afterPath="$PROJECT_DIR$/listCategories.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/listCommentairesProfil.php" afterPath="$PROJECT_DIR$/listCommentairesProfil.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profil.php" afterPath="$PROJECT_DIR$/profil.php" />
     </list>
     <ignored path="Bac.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,38 +34,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/custom.css">
+      <file leaf-file-name="profil.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/profil.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listCategories.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/listCategories.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+            <state relative-caret-position="440">
+              <caret line="211" column="28" selection-start-line="211" selection-start-column="28" selection-end-line="211" selection-end-column="28" />
               <folding>
-                <marker date="1479375836282" expanded="true" signature="1108:1133" ph="SELECT * FRO... categories" />
-                <marker date="1479375836282" expanded="true" signature="2186:2196" ph="..." />
-                <marker date="1479375836282" expanded="true" signature="2297:2513" ph="..." />
-                <marker date="1479375836282" expanded="true" signature="2348:2447" ph="..." />
-                <marker date="1479375836282" expanded="false" signature="2405:2416" ph="..." />
+                <marker date="1479482413828" expanded="true" signature="3235:3296" ph="SELECT * FRO... users" />
+                <marker date="1479482413828" expanded="true" signature="8160:8485" ph="..." />
+                <marker date="1479482413828" expanded="true" signature="8210:8485" ph="..." />
+                <marker date="1479482413828" expanded="true" signature="8444:8454" ph="..." />
+                <marker date="1479482413828" expanded="true" signature="8599:8874" ph="..." />
+                <marker date="1479482413828" expanded="true" signature="8649:8778" ph="..." />
+                <marker date="1479482413828" expanded="true" signature="8736:8747" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formuAjoutCategorie.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/formuAjoutCategorie.php">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../presentation/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+            <state relative-caret-position="136">
+              <caret line="8" column="4" selection-start-line="6" selection-start-column="1" selection-end-line="8" selection-end-column="4" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listCommentairesProfil.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/listCommentairesProfil.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+              <folding>
+                <marker date="1479482244039" expanded="true" signature="1036:1259" ph="SELECT * FRO... commentaires" />
+                <marker date="1479482244039" expanded="true" signature="2413:2423" ph="..." />
+                <marker date="1479482244039" expanded="true" signature="2524:2742" ph="..." />
+                <marker date="1479482244039" expanded="true" signature="2577:2676" ph="..." />
+                <marker date="1479482244039" expanded="true" signature="2634:2645" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,20 +115,16 @@
         <option value="$PROJECT_DIR$/supprimer_commentaire_profil.php" />
         <option value="$PROJECT_DIR$/modifierCommentaireProfil.php" />
         <option value="$PROJECT_DIR$/modifierCommentairesAdmin.php" />
-        <option value="$PROJECT_DIR$/listCommentairesProfil.php" />
-        <option value="$PROJECT_DIR$/profil.php" />
         <option value="$PROJECT_DIR$/formuAjoutRole.php" />
         <option value="$PROJECT_DIR$/listRoles.php" />
         <option value="$PROJECT_DIR$/formuAjoutAdmin.php" />
         <option value="$PROJECT_DIR$/listUsers.php" />
-        <option value="$PROJECT_DIR$/listCategories.php" />
         <option value="$PROJECT_DIR$/formuAjoutUser.php" />
         <option value="$PROJECT_DIR$/navbarAdmin.php" />
         <option value="$PROJECT_DIR$/post_com.php" />
         <option value="$PROJECT_DIR$/details_video.php" />
         <option value="$PROJECT_DIR$/listCommentairesAdmin.php" />
         <option value="$PROJECT_DIR$/admin.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/modifier_video.php" />
         <option value="$PROJECT_DIR$/formuAjoutVideo.php" />
         <option value="$PROJECT_DIR$/navbar.php" />
@@ -132,6 +133,10 @@
         <option value="$PROJECT_DIR$/listVideos.php" />
         <option value="$PROJECT_DIR$/listVideos2.php" />
         <option value="$PROJECT_DIR$/formuAjoutCategorie.php" />
+        <option value="$PROJECT_DIR$/listCategories.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/listCommentairesProfil.php" />
+        <option value="$PROJECT_DIR$/profil.php" />
       </list>
     </option>
   </component>
@@ -282,12 +287,12 @@
       <workItem from="1479387449230" duration="3277000" />
       <workItem from="1479396081151" duration="1639000" />
       <workItem from="1479456158339" duration="380000" />
-      <workItem from="1479473088055" duration="4802000" />
+      <workItem from="1479473088055" duration="5946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126233000" />
+    <option name="totallyTimeSpent" value="127377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="676" y="0" width="697" height="765" extended-state="0" />
@@ -349,7 +354,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/wamp/www/Bac/supprimer_categorie.php" />
     <entry file="file://C:/wamp/www/Bac/modifier_user_profil.php" />
     <entry file="file://C:/wamp/www/Bac/listUsers.php" />
     <entry file="file://C:/wamp/www/Bac/modifier_user.php" />
@@ -545,13 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="100" column="23" selection-start-line="100" selection-start-column="23" selection-end-line="100" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/navbarAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -563,13 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="89" column="155" selection-start-line="89" selection-start-column="155" selection-end-line="89" selection-end-column="155" />
         </state>
       </provider>
     </entry>
@@ -601,14 +591,6 @@
           <folding>
             <marker date="1479309938187" expanded="true" signature="209:302" ph="UPDATE comme... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/listCommentairesProfil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -673,6 +655,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/formuAjoutCategorie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listCategories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+          <folding>
+            <marker date="1479481685574" expanded="true" signature="1146:1171" ph="SELECT * FRO... categories" />
+            <marker date="1479481685574" expanded="true" signature="2224:2234" ph="..." />
+            <marker date="1479481685574" expanded="true" signature="2335:2551" ph="..." />
+            <marker date="1479481685574" expanded="true" signature="2386:2485" ph="..." />
+            <marker date="1479481685574" expanded="false" signature="2443:2454" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -681,25 +685,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/listCategories.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+        <state relative-caret-position="227">
+          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
           <folding>
-            <marker date="1479375836282" expanded="true" signature="1108:1133" ph="SELECT * FRO... categories" />
-            <marker date="1479375836282" expanded="true" signature="2186:2196" ph="..." />
-            <marker date="1479375836282" expanded="true" signature="2297:2513" ph="..." />
-            <marker date="1479375836282" expanded="true" signature="2348:2447" ph="..." />
-            <marker date="1479375836282" expanded="false" signature="2405:2416" ph="..." />
+            <element signature="n#style#0;n#img#0;n#a#0;n#center#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1479482052062" expanded="true" signature="1523:1620" ph="SELECT * FRO... videos" />
+            <marker date="1479482052062" expanded="true" signature="3155:3193" ph="SELECT * FRO... videos" />
+            <marker date="1479482052062" expanded="true" signature="3527:3537" ph="..." />
+            <marker date="1479482052062" expanded="true" signature="3668:3678" ph="..." />
+            <marker date="1479482052062" expanded="true" signature="3800:3810" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/formuAjoutCategorie.php">
+    <entry file="file://$PROJECT_DIR$/listCommentairesProfil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+        <state relative-caret-position="17">
+          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+          <folding>
+            <marker date="1479482244039" expanded="true" signature="1036:1259" ph="SELECT * FRO... commentaires" />
+            <marker date="1479482244039" expanded="true" signature="2413:2423" ph="..." />
+            <marker date="1479482244039" expanded="true" signature="2524:2742" ph="..." />
+            <marker date="1479482244039" expanded="true" signature="2577:2676" ph="..." />
+            <marker date="1479482244039" expanded="true" signature="2634:2645" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../presentation/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="4" selection-start-line="6" selection-start-column="1" selection-end-line="8" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="211" column="28" selection-start-line="211" selection-start-column="28" selection-end-line="211" selection-end-column="28" />
+          <folding>
+            <marker date="1479482413828" expanded="true" signature="3235:3296" ph="SELECT * FRO... users" />
+            <marker date="1479482413828" expanded="true" signature="8160:8485" ph="..." />
+            <marker date="1479482413828" expanded="true" signature="8210:8485" ph="..." />
+            <marker date="1479482413828" expanded="true" signature="8444:8454" ph="..." />
+            <marker date="1479482413828" expanded="true" signature="8599:8874" ph="..." />
+            <marker date="1479482413828" expanded="true" signature="8649:8778" ph="..." />
+            <marker date="1479482413828" expanded="true" signature="8736:8747" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

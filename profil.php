@@ -196,7 +196,7 @@ $tableHeading[]='modifier';
                     </div>
                 </div>
                 <div class="panel-footer">
-                    <center><a href="#" class="btn btn-success"><i class="glyphicon glyphicon-envelope"> Mes messages!</i></a></center>
+                    <center><button id="a" class="btn btn-success"><i class="glyphicon glyphicon-envelope"> Mes messages!</i></button></center>
                 </div>
             </div>
         </div>
@@ -207,7 +207,10 @@ $tableHeading[]='modifier';
 <?php include('remonter.php'); ?>
 
 <script type="text/javascript">
-
+    $("#a1").hide();
+    $("#a").click(function() {
+        $( "#a1" ).toggle(1000);
+    });
 
     $(document).ready(function(){
 

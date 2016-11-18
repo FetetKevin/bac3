@@ -103,8 +103,6 @@ while($row = mysqli_fetch_assoc($reponse)){
 
 <?php include('remonter.php'); ?>
 
-
-
 <!-- PAGINATION -->
 <div>
     <?php
@@ -134,6 +132,7 @@ while($row = mysqli_fetch_assoc($reponse)){
 
 <script src="dynamicplaceholder.js"></script>
 <script src="custom.js"></script>
+
 
 </body>
 </html>

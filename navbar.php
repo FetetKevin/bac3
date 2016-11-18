@@ -120,5 +120,5 @@
     ?>
 </div>
 <script>
-    <?php include('barfixed.js'); ?>
+    <?php include('custom.js'); ?>
 </script>

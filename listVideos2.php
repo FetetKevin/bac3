@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid">
     <div class="panel panel-success">
         <div class="panel-heading"><h3 class="text-center">Liste des Videos En Attentes !</h3>
         </div>

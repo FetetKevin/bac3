@@ -1,7 +1,6 @@
-<div class="container">
+<div class="container-fluid">
     <div class="panel panel-success">
-        <div class="panel-heading"><h3 class="text-center">Liste des Videos Postées !</h3>
-        </div>
+        <div class="panel-heading"><h3 class="text-center">Liste des Videos Postées !</h3></div>
         <div class="panel-body">
 <?php
 //Connection Bdd
@@ -50,6 +49,7 @@ if(mysqli_num_rows($reponse)>0){
     //Ajout dans un tableau neuf pour lafficher avec la méthode tableBody
     while($row = mysqli_fetch_assoc($reponse)){
 
+
         echo '<form action="modifier_video.php" method="post">';
 
         echo "<tr class='".$row['id_video']."'>";//ouvre une ligne
@@ -88,7 +88,7 @@ echo "</tbody>";//tableau body fin
 echo "</table>";//FIN DU TABLEAU
 
 ?>
-        </div>
+              </div>
             <div class="panel-footer">Liste des <span style="color:green;">Videos Publiées</span></div>
     </div>
 </div>

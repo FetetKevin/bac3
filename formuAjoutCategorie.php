@@ -54,6 +54,8 @@ else {
 
 
 <?php include('listCategories.php'); ?>
+<br>
+<br>
 <script src="dynamicplaceholder.js"></script>
 
 </body>

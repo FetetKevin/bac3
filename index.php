@@ -79,19 +79,19 @@ while($row = mysqli_fetch_assoc($reponse)){
     if($row['etat_video'] == "publie") {
         ?>
         <div class="container video videoCat-<?= $row['id_categorie'] ?>">
-            <div class="panel panel-warning">
-                <div class="panel-heading">
-                        <h2 class="text-center"><?= $row['titre_video']; ?></h2>
-                        <h3 class="text-center">Categorie : <?= $row['nom_categorie']; ?></h3>
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                            <h2 class="text-center"><?= $row['titre_video']; ?></h2>
+                            <h3 class="text-center">Categorie : <?= $row['nom_categorie']; ?></h3>
+                    </div>
+                    <div class="panel-body">
+                        <center>
+                            <a href="details_video.php?id_video=<?= $row['id_video'] ?>">
+                                <img src="vignette/<?php echo $row['vignette_video'] ?>" class="img-squarre img-responsive" style="height: 200px;width:300px;">
+                            </a>
+                        </center>
+                    </div>
                 </div>
-                <div class="panel-body">
-                    <center>
-                        <a href="details_video.php?id_video=<?= $row['id_video'] ?>">
-                            <img src="vignette/<?php echo $row['vignette_video'] ?>" class="img-squarre img-responsive" style="height: 200px;width:300px;">
-                        </a>
-                    </center>
-                </div>
-            </div>
         </div><!-- fin ontainer -->
         <br>
         <br>
@@ -128,6 +128,8 @@ while($row = mysqli_fetch_assoc($reponse)){
     // GO TO LAST PAGE
     echo "<li><span><a href=index.php?page=$total_pages style=\"color:red;\">Last Page</a></span></li></center>";
     ?>
+    <br>
+    <br>
 </div><!-- FIN PAGINATION -->
 
 <script src="dynamicplaceholder.js"></script>

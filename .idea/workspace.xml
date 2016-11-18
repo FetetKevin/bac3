@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec7996dd-ad40-4818-91d6-6f9791b521b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/maquette/New Mockup 1.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/maquette/NewProject.bmpr" afterPath="$PROJECT_DIR$/assets/maquette/NewProject.bmpr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/custom.css" afterPath="$PROJECT_DIR$/assets/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tableau de bord bac.txt" afterPath="$PROJECT_DIR$/assets/tableau de bord bac.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formuAjoutCategorie.php" afterPath="$PROJECT_DIR$/formuAjoutCategorie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/listVideos.php" afterPath="$PROJECT_DIR$/listVideos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/listVideos2.php" afterPath="$PROJECT_DIR$/listVideos2.php" />
     </list>
     <ignored path="Bac.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,28 +40,34 @@
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="278">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.php">
+      <file leaf-file-name="listCategories.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/listCategories.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="-17">
+              <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+              <folding>
+                <marker date="1479375836282" expanded="true" signature="1108:1133" ph="SELECT * FRO... categories" />
+                <marker date="1479375836282" expanded="true" signature="2186:2196" ph="..." />
+                <marker date="1479375836282" expanded="true" signature="2297:2513" ph="..." />
+                <marker date="1479375836282" expanded="true" signature="2348:2447" ph="..." />
+                <marker date="1479375836282" expanded="false" signature="2405:2416" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listCommentairesProfil.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/listCommentairesProfil.php">
+      <file leaf-file-name="formuAjoutCategorie.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/formuAjoutCategorie.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-425">
-              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="58" />
+            <state relative-caret-position="451">
+              <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -109,22 +116,22 @@
         <option value="$PROJECT_DIR$/listRoles.php" />
         <option value="$PROJECT_DIR$/formuAjoutAdmin.php" />
         <option value="$PROJECT_DIR$/listUsers.php" />
-        <option value="$PROJECT_DIR$/formuAjoutCategorie.php" />
         <option value="$PROJECT_DIR$/listCategories.php" />
         <option value="$PROJECT_DIR$/formuAjoutUser.php" />
         <option value="$PROJECT_DIR$/navbarAdmin.php" />
         <option value="$PROJECT_DIR$/post_com.php" />
         <option value="$PROJECT_DIR$/details_video.php" />
         <option value="$PROJECT_DIR$/listCommentairesAdmin.php" />
-        <option value="$PROJECT_DIR$/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/admin.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/modifier_video.php" />
         <option value="$PROJECT_DIR$/formuAjoutVideo.php" />
-        <option value="$PROJECT_DIR$/listVideos.php" />
-        <option value="$PROJECT_DIR$/listVideos2.php" />
         <option value="$PROJECT_DIR$/navbar.php" />
         <option value="$PROJECT_DIR$/config.php" />
+        <option value="$PROJECT_DIR$/assets/css/custom.css" />
+        <option value="$PROJECT_DIR$/listVideos.php" />
+        <option value="$PROJECT_DIR$/listVideos2.php" />
+        <option value="$PROJECT_DIR$/formuAjoutCategorie.php" />
       </list>
     </option>
   </component>
@@ -168,7 +175,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -180,6 +186,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -275,11 +282,12 @@
       <workItem from="1479387449230" duration="3277000" />
       <workItem from="1479396081151" duration="1639000" />
       <workItem from="1479456158339" duration="380000" />
+      <workItem from="1479473088055" duration="4802000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121431000" />
+    <option name="totallyTimeSpent" value="126233000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="676" y="0" width="697" height="765" extended-state="0" />
@@ -474,13 +482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modifierCommentaireProfil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modifierCommentairesAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -503,20 +504,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/listUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/formuAjoutCategorie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/listCategories.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
@@ -579,13 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modifier_video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
@@ -597,35 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-930">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/listVideos2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="87" selection-start-line="2" selection-start-column="87" selection-end-line="2" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/formuAjoutVideo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="109" column="4" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/listVideos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1547">
-          <caret line="91" column="90" selection-start-line="91" selection-start-column="90" selection-end-line="91" selection-end-column="90" />
         </state>
       </provider>
     </entry>
@@ -643,6 +594,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modifierCommentaireProfil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <marker date="1479309938187" expanded="true" signature="209:302" ph="UPDATE comme... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listCommentairesProfil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -651,10 +620,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/listCommentairesProfil.php">
+    <entry file="file://$PROJECT_DIR$/formuAjoutVideo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="58" />
+        <state relative-caret-position="1394">
+          <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
+          <folding>
+            <marker date="1479462122312" expanded="true" signature="3248:3272" ph="SELECT * FRO... categories" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modifier_video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+          <folding>
+            <marker date="1479388074941" expanded="true" signature="567:868" ph="UPDATE video... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listVideos2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding>
+            <marker date="1479481111229" expanded="true" signature="1601:1749" ph="SELECT * FRO... videos" />
+            <marker date="1479481111229" expanded="true" signature="4109:4310" ph="..." />
+            <marker date="1479481111229" expanded="true" signature="4207:4305" ph="..." />
+            <marker date="1479481111229" expanded="false" signature="4264:4274" ph="..." />
+            <marker date="1479481111229" expanded="true" signature="4399:4611" ph="..." />
+            <marker date="1479481111229" expanded="true" signature="4446:4545" ph="..." />
+            <marker date="1479481111229" expanded="false" signature="4503:4514" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listVideos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1479481067995" expanded="true" signature="1204:1348" ph="SELECT * FRO... videos" />
+            <marker date="1479481067995" expanded="true" signature="3493:3694" ph="..." />
+            <marker date="1479481067995" expanded="true" signature="3591:3689" ph="..." />
+            <marker date="1479481067995" expanded="true" signature="3648:3658" ph="..." />
+            <marker date="1479481067995" expanded="true" signature="3759:3971" ph="..." />
+            <marker date="1479481067995" expanded="true" signature="3806:3905" ph="..." />
+            <marker date="1479481067995" expanded="false" signature="3863:3874" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listCategories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+          <folding>
+            <marker date="1479375836282" expanded="true" signature="1108:1133" ph="SELECT * FRO... categories" />
+            <marker date="1479375836282" expanded="true" signature="2186:2196" ph="..." />
+            <marker date="1479375836282" expanded="true" signature="2297:2513" ph="..." />
+            <marker date="1479375836282" expanded="true" signature="2348:2447" ph="..." />
+            <marker date="1479375836282" expanded="false" signature="2405:2416" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/formuAjoutCategorie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
           <folding />
         </state>
       </provider>
